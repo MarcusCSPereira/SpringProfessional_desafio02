@@ -32,4 +32,25 @@ build/
 ### VS Code ###
 .vscode/
 
+### Maven ###
 .mvn/
+mvnw
+mvnw.cmd
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+### Logs ###
+logs/
+*.log
+
+### OS specific files ###
+.DS_Store
+Thumbs.db
+
+### Application properties with sensitive data ###
+# Descomente se tiver arquivos de configuração com dados sensíveis que não devem ir para o repositório
+# src/main/resources/application-local.yaml
+# src/main/resources/application-dev.yaml
+# src/main/resources/application-prod.yaml
