@@ -34,6 +34,8 @@ public class Activity {
   @Column(columnDefinition = "TEXT")
   private String description;
 
+  private Double price;
+
   // Relacionamentos:
   // Muitos para um com Categoria
   @ManyToOne
@@ -72,6 +74,14 @@ public class Activity {
     this.description = description;
   }
 
+  public Double getPrice() {
+    return price;
+  }
+
+  public void setPrice(Double price) {
+    this.price = price;
+  }
+
   public Category getCategory() {
     return category;
   }
@@ -84,6 +94,9 @@ public class Activity {
     return timeBlocks;
   }
 
+  public Set<Participant> getParticipants() {
+    return participants;
+  }
   
   
 }

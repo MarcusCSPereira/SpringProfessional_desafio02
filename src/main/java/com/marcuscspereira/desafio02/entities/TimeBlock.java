@@ -46,14 +46,6 @@ public class TimeBlock {
     this.id = id;
   }
 
-  public Activity getActivity() {
-    return activity;
-  }
-
-  public void setActivity(Activity activity) {
-    this.activity = activity;
-  }
-
   public Instant getStart() {
     return start;
   }
@@ -69,5 +61,10 @@ public class TimeBlock {
   public void setEndTime(Instant endTime) {
     this.endTime = endTime;
   }
+
+  public Activity getActivity() {
+    return activity;
+  }
+  
 
 }
